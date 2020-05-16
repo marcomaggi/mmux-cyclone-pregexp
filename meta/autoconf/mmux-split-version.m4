@@ -28,7 +28,7 @@
 #
 # LICENSE
 #
-#   Copyright (c) 2019 Marco Maggi <marco.maggi-ipsu@poste.it>
+#   Copyright (c) 2019, 2020 Marco Maggi <marco.maggi-ipsu@poste.it>
 #   Copyright (c) 2008 Tom Howard <tomhoward@users.sf.net>
 #
 #   Copying and distribution of this file, with or without modification,
@@ -44,12 +44,12 @@ AC_DEFUN([MMUX_SPLIT_VERSION],[
       [AC_REQUIRE([AC_PROG_SED])
        AS_VAR_SET($2[]_MAJOR_VERSION,[`echo "$MMUX_AX_SPLIT_VERSION_INPUT" | "$SED" 's/\([[^.]][[^.]]*\).*/\1/'`])])
 
-    AC_CACHE_CHECK([$1 major version],
+    AC_CACHE_CHECK([$1 minor version],
       [$2[]_MINOR_VERSION],
       [AC_REQUIRE([AC_PROG_SED])
        AS_VAR_SET($2[]_MINOR_VERSION,[`echo "$MMUX_AX_SPLIT_VERSION_INPUT" | "$SED" 's/[[^.]][[^.]]*.\([[^.]][[^.]]*\).*/\1/'`])])
 
-    AC_CACHE_CHECK([$1 major version],
+    AC_CACHE_CHECK([$1 patch version],
       [$2[]_PATCH_VERSION],
       [AC_REQUIRE([AC_PROG_SED])
        AS_VAR_SET($2[]_PATCH_VERSION,[`echo "$MMUX_AX_SPLIT_VERSION_INPUT" | "$SED" 's/[[^.]][[^.]]*.[[^.]][[^.]]*.\(.*\)/\1/'`])])

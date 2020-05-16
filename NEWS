@@ -6,6 +6,8 @@
 Revision 0.1.0-devel.1
 ----------------------
 
+* Renamed makefile rule "installcheck" to "installcheck-local".
+
 * Fixed messages in GNU Autoconf macro file "mmux-split-version.m4".
 
 

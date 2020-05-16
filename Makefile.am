@@ -11,10 +11,13 @@ CLEANFILES		=
 
 EXTRA_DIST		+= doc/mmux-cyclone-docs.style.css
 CLEANFILES		+= doc/mmux-cyclone-docs.css
-AM_MAKEINFOHTMLFLAGS	= --css-ref=mmux-cyclone-docs.css
 
-info_TEXINFOS		= doc/mmux-cyclone-pregexp.texi
-doc_mmux_cyclone_pregexp_TEXINFOS = doc/macros.texi
+AM_MAKEINFOFLAGS	= --no-split
+AM_MAKEINFOHTMLFLAGS	= --split=node -c WORDS_IN_PAGE=0 --css-ref=mmux-cyclone-docs.css \
+	-c PRE_BODY_CLOSE="<p>This document describes version <tt>$(PACKAGE_VERSION)</tt> of <em>$(PACKAGE_NAME)</em>.</p>"
+
+info_TEXINFOS				= doc/mmux-cyclone-pregexp.texi
+doc_mmux_cyclone_pregexp_TEXINFOS	= doc/macros.texi
 
 ## --------------------------------------------------------------------
 

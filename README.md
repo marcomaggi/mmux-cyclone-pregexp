@@ -133,7 +133,7 @@ hand options to the compiler:
 $ make CYCLONE_FLAGS='-O3'
 ```
 
-Shared libraries will be installed under `$libdir`.
+Shared libraries will be installed under `$(libdir)/cyclone`.
 
 ## Usage
 

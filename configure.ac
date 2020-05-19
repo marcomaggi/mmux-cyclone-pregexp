@@ -2,7 +2,7 @@
 #
 
 AC_PREREQ([2.69])
-MMUX_PKG_VERSIONS([0],[1],[0],[devel.1])
+MMUX_PKG_VERSIONS([0],[1],[0],[devel.2])
 AC_INIT([MMUX Cyclone Pregexp],[MMUX_PACKAGE_VERSION],
   [mrc.mgg@gmail.com],
   [mmux-cyclone-pregexp],[http://github.com/marcomaggi/mmux-cyclone-pregexp])

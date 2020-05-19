@@ -31,7 +31,8 @@
 @c To be used as @value{COPYRIGHT_YEARS} whenever we need to include the list of copyright years.
 @set COPYRIGHT_YEARS            2020
 
-@set CYCLONE_VERSION            0.17
+@set CYCLONE_VERSION                    0.17
+@set MMUX_CYCLONE_CHECKS_VERSION        0.1.0
 
 @c ------------------------------------------------------------
 
@@ -65,7 +66,8 @@ implementing regular expressions.  Cyclone is a Scheme-to-C compiler supporting 
 features as defined in the ``Revised^7 Report on Scheme''.
 
 The package supports @posix{} platforms.  This package should work with Cyclone version
-@value{CYCLONE_VERSION}.
+@value{CYCLONE_VERSION}.  To run the test suite this package depends upon the external package:
+@mmux{} Cyclone Checks, at least version @value{MMUX_CYCLONE_CHECKS_VERSION}.
 
 The latest release can be downloaded from:
 
@@ -166,7 +168,8 @@ implementing regular expressions.  Cyclone is a Scheme-to-C compiler supporting 
 features as defined in the ``Revised^7 Report on Scheme''.
 
 This package supports @posix{} platforms.  This package should work with Cyclone version
-@value{CYCLONE_VERSION}.
+@value{CYCLONE_VERSION}.  To run the test suite this package depends upon the external package:
+@mmux{} Cyclone Checks, at least version @value{MMUX_CYCLONE_CHECKS_VERSION}.
 
 This distribution is a repackaging of Dorai Sitaram's Pregexp library.  Pregexp is a portable
 implementation of regular expressions (regexps) that runs in any @rnrs{5} or @rnrs{4} compliant
@@ -1381,6 +1384,10 @@ Cyclone can be downloaded from:
 The original code is available at (last checked May 16, 2020):
 
 @center @url{https://github.com/ds26gte/pregexp}
+
+The package @mmux{} Cyclone Checks is available from:
+
+@center @url{https://github.com/marcomaggi/mmux-cyclone-checks/}
 
 @c page
 @node concept index

@@ -38,7 +38,8 @@ directives as:
 This is in addition to the  more basic directives familiar to all regexp
 users.
 
-The package targets POSIX systems.
+The package targets  POSIX systems.  To run the test  suite this package
+depends upon the external package: MMUX Cyclone Checks.
 
 The package uses the GNU Autotools and it is tested, using Travis CI, on
 both Ubuntu GNU+Linux systems and OS X systems.
@@ -189,4 +190,8 @@ we can download Cyclone from:
 The original code is available at (last checked May 16, 2020):
 
 [https://github.com/ds26gte/pregexp](https://github.com/ds26gte/pregexp)
+
+The package MMUX Cyclone Checks is available from:
+
+[https://github.com/marcomaggi/mmux-cyclone-checks/](https://github.com/marcomaggi/mmux-cyclone-checks/)
 
